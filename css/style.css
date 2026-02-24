@@ -34,13 +34,16 @@ a {
   font-size: 1.2rem;
 }
 
+.site-nav ul li a:hover {
+  border-bottom: 1px solid black;
+}
+
 /* Hero Section */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  border: 2px solid black;
 }
 
 .hero-content {
@@ -50,11 +53,20 @@ a {
   padding: 1rem;
 }
 
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: #000;
+  font-weight: bold;
+}
+
 .hero-content,
 .hero-img {
   width: 300px;
   height: 300px;
-  border: 1px solid black;
   flex: 1;
 }
 
@@ -62,4 +74,126 @@ a {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.hero-btn {
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.hero-btn:hover {
+  background-color: #333;
+}
+
+/* Features Section */
+.features {
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.feature-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.features h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+}
+
+.feature-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Quote Section */
+.quote {
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.quote blockquote {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.quote p {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* CTA Section */
+.cta {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+.cta h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.cta p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.cta a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.cta a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Footer */
+.site-footer {
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.site-footer p {
+  font-size: 0.9rem;
+}
+.site-footer a {
+  color: #000;
+  font-weight: bold;
+}
+.site-footer a:hover {
+  text-decoration: underline;
 }
